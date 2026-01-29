@@ -1,0 +1,29 @@
+{
+  "name": "KPI Anomaly Detection Dataset",
+  "version": "1.0",
+  "samples": 25000,
+  "features": [
+    "timestamp",
+    "kpi_type",
+    "value",
+    "is_anomaly",
+    "service_id",
+    "rolling_mean_12",
+    "rolling_std_12",
+    "rolling_max_24",
+    "rolling_min_24"
+  ],
+  "kpi_types": [
+    "latency",
+    "throughput",
+    "error_rate",
+    "cpu_usage",
+    "memory_usage"
+  ],
+  "anomaly_ratio": 0.32728,
+  "time_range": {
+    "start": "2025-12-30T15:10:35.372344",
+    "end": "2026-01-16T23:45:35.430587"
+  },
+  "description": "Time-series KPIs with injected anomalies for telecom operations analysis"
+}
