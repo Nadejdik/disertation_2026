@@ -1,0 +1,13 @@
+{
+  "dataset": "KPI Anomaly Detection (Real)",
+  "source": "AIOps Challenge Dataset",
+  "samples": 1000,
+  "features": [
+    "timestamp",
+    "value",
+    "label",
+    "KPI ID"
+  ],
+  "description": "Real-world KPI time-series data from production systems",
+  "processed_date": "2026-01-29T14:58:46.245299"
+}

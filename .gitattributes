@@ -1,0 +1,2 @@
+datasets/kpi_anomaly_detection/**/*.csv filter=lfs diff=lfs merge=lfs -text
+datasets/kpi_anomaly_detection/**/*.hdf filter=lfs diff=lfs merge=lfs -text

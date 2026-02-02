@@ -1,0 +1,2 @@
+KPI ID,samples,value_mean,value_std,value_min,value_max,anomalies,anomaly_rate
+02e99bd4f6cfb33f,100000,1.9282,0.6258,0.6909,7.6393,9168,0.0917

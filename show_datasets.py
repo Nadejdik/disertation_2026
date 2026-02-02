@@ -1,0 +1,60 @@
+"""Quick dataset preview"""
+import pandas as pd
+
+print("="*70)
+print("DISSERTATION DATASETS - GENERATED SUCCESSFULLY!")
+print("="*70)
+
+# Telecom Faults
+print("\n📊 1. SYNTHETIC TELECOM FAULTS DATASET")
+print("-"*70)
+df1 = pd.read_csv('datasets/synthetic_telecom_faults.csv')
+print(f"Samples: {len(df1)}")
+print(f"\nFault Types:")
+print(df1['fault_type'].value_counts().to_string())
+print(f"\nOutcomes:")
+print(df1['outcome'].value_counts().to_string())
+print(f"\nExample fault:")
+example = df1.iloc[0]
+print(f"  Service: {example['service']}")
+print(f"  Fault: {example['fault_type']}")
+print(f"  Response Time: {example['response_time_ms']:.0f}ms")
+print(f"  Error Rate: {example['error_rate']:.1%}")
+print(f"  Outcome: {example['outcome']}")
+
+# KPI Anomalies
+print("\n" + "="*70)
+print("📈 2. KPI ANOMALY DETECTION DATASET")
+print("-"*70)
+df2 = pd.read_csv('datasets/kpi_anomaly_detection.csv')
+print(f"Time-series samples: {len(df2)}")
+print(f"\nKPI Types:")
+print(df2['kpi_type'].value_counts().to_string())
+print(f"\nAnomaly Distribution:")
+print(df2['is_anomaly'].value_counts().to_string())
+print(f"Anomaly Rate: {df2['is_anomaly'].mean():.1%}")
+
+# Microservices
+print("\n" + "="*70)
+print("🔗 3. MICROSERVICES FAULT DATASET")
+print("-"*70)
+df3 = pd.read_csv('datasets/microservices_traces.csv')
+df4 = pd.read_csv('datasets/microservices_logs.csv')
+print(f"Traces: {df3['trace_id'].nunique()}")
+print(f"Total spans: {len(df3)}")
+print(f"Total logs: {len(df4)}")
+print(f"\nFault Scenarios:")
+print(df3.groupby('fault_scenario')['trace_id'].nunique().to_string())
+print(f"\nStatus Distribution:")
+print(df3['status'].value_counts().to_string())
+print(f"Error Rate: {(df3['status']=='error').mean():.1%}")
+
+print("\n" + "="*70)
+print("✅ ALL DATASETS READY FOR EXPERIMENTS!")
+print("="*70)
+print("\n📝 Next Steps:")
+print("1. Configure your OpenAI API key in .env file")
+print("2. Open Jupyter notebook: jupyter notebook notebooks/dissertation_experiments.ipynb")
+print("3. Or run: python run_experiments.py --models gpt-4 --n-samples 10")
+print("\nDataset files are in: datasets/")
+print("Ready to evaluate GPT-4, LLaMA-3, and Phi-3 models!")
