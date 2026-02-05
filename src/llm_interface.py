@@ -7,7 +7,7 @@ import json
 import time
 from abc import ABC, abstractmethod
 from typing import List, Dict, Any, Optional
-import openai
+from openai import OpenAI
 
 
 class BaseLLMModel(ABC):
@@ -43,8 +43,8 @@ class GPT4Model(BaseLLMModel):
         if not self.api_key:
             raise ValueError("OpenAI API key not found. Set OPENAI_API_KEY environment variable.")
         
-        # Initialize OpenAI client
-        openai.api_key = self.api_key
+        # Initialize OpenAI client (v1.x API)
+        self.client = OpenAI(api_key=self.api_key)
         
     def generate(self, prompt: str, system_prompt: Optional[str] = None) -> Dict[str, Any]:
         """Generate response using GPT-4"""
@@ -58,7 +58,7 @@ class GPT4Model(BaseLLMModel):
             
             start_time = time.time()
             
-            response = openai.ChatCompletion.create(
+            response = self.client.chat.completions.create(
                 model=self.model_name,
                 messages=messages,
                 temperature=self.temperature,
@@ -68,14 +68,14 @@ class GPT4Model(BaseLLMModel):
             end_time = time.time()
             
             self.total_requests += 1
-            self.total_tokens_used += response['usage']['total_tokens']
+            self.total_tokens_used += response.usage.total_tokens
             
             return {
-                'response': response['choices'][0]['message']['content'],
+                'response': response.choices[0].message.content,
                 'model': self.model_name,
-                'tokens_used': response['usage']['total_tokens'],
+                'tokens_used': response.usage.total_tokens,
                 'latency_seconds': end_time - start_time,
-                'finish_reason': response['choices'][0]['finish_reason'],
+                'finish_reason': response.choices[0].finish_reason,
                 'success': True,
                 'error': None
             }

@@ -10,7 +10,7 @@ from pathlib import Path
 import logging
 from datetime import datetime
 
-from llm_interface import ModelFactory, BaseLLMModel
+from .llm_interface import ModelFactory, BaseLLMModel
 
 
 logging.basicConfig(level=logging.INFO)
