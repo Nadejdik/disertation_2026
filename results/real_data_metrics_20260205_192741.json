@@ -1,0 +1,50 @@
+[
+  {
+    "model": "gpt-4",
+    "task": "kpi_anomaly_detection",
+    "accuracy": 1.0,
+    "samples": 20,
+    "avg_confidence": 0.8300048663347029,
+    "avg_response_time": 2.043831817706612
+  },
+  {
+    "model": "gpt-4",
+    "task": "overall",
+    "accuracy": 1.0,
+    "samples": 20,
+    "avg_confidence": 0.8300048663347029,
+    "avg_response_time": 2.043831817706612
+  },
+  {
+    "model": "llama-3",
+    "task": "kpi_anomaly_detection",
+    "accuracy": 0.8,
+    "samples": 20,
+    "avg_confidence": 0.8182711504514554,
+    "avg_response_time": 2.142505478021326
+  },
+  {
+    "model": "llama-3",
+    "task": "overall",
+    "accuracy": 0.8,
+    "samples": 20,
+    "avg_confidence": 0.8182711504514554,
+    "avg_response_time": 2.142505478021326
+  },
+  {
+    "model": "phi-3",
+    "task": "kpi_anomaly_detection",
+    "accuracy": 0.45,
+    "samples": 20,
+    "avg_confidence": 0.8264138313571096,
+    "avg_response_time": 2.347341491073247
+  },
+  {
+    "model": "phi-3",
+    "task": "overall",
+    "accuracy": 0.45,
+    "samples": 20,
+    "avg_confidence": 0.8264138313571096,
+    "avg_response_time": 2.347341491073247
+  }
+]

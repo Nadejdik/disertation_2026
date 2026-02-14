@@ -48,7 +48,7 @@ venv.bak/
 .DS_Store
 Thumbs.db
 
-# Models (large files)
+# Models (large files - keep .gguf excluded due to size)
 models_cache/
 *.bin
 *.safetensors
@@ -56,11 +56,11 @@ models_cache/
 *.pt
 *.pth
 
-# Results (optional - comment out if you want to commit results)
-results/*.csv
-results/*.json
-results/*.png
-results/*.xlsx
+# Results - NOW INCLUDED IN GIT
+# results/*.csv
+# results/*.json
+# results/*.png
+# results/*.xlsx
 !results/.gitkeep
 
 # Logs
@@ -71,8 +71,8 @@ logs/
 tmp/
 temp/
 *.tmp
-models/
-datasets/
+# models/  - Commented out to include model configs
+# datasets/ - Commented out to include datasets
 
 # API keys and secrets
 *.key
