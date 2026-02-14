@@ -1,0 +1,33 @@
+{
+  "name": "Microservices Fault Dataset",
+  "version": "1.0",
+  "traces": 1000,
+  "spans": 13414,
+  "logs": 12414,
+  "services": [
+    "gateway",
+    "auth",
+    "user-db",
+    "catalog",
+    "catalog-db",
+    "cache",
+    "order",
+    "payment",
+    "payment-gateway",
+    "fraud-detection",
+    "inventory",
+    "inventory-db",
+    "shipping",
+    "logistics-api"
+  ],
+  "fault_scenarios": [
+    "normal",
+    "timeout",
+    "cascading_failure",
+    "network_latency",
+    "resource_exhaustion",
+    "circuit_breaker_open",
+    "database_deadlock"
+  ],
+  "description": "Distributed traces, logs, and metrics for telecom-like microservices architecture"
+}

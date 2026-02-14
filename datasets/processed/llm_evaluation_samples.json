@@ -4,10 +4,10 @@
     "task": "kpi_anomaly_detection",
     "dataset": "real_kpi",
     "data": {
-      "timestamp": 1476460800,
-      "value": 0.0126036806477,
+      "timestamp": 1493568000,
+      "value": 1.90163934231,
       "label": 0,
-      "KPI ID": "da10a69f-d836-3baa-ad40-3e548ecf1fbd"
+      "KPI ID": "02e99bd4f6cfb33f"
     },
     "question": "Analyze this KPI time-series data and determine if there is an anomaly. Explain your reasoning."
   },
@@ -16,10 +16,10 @@
     "task": "kpi_anomaly_detection",
     "dataset": "real_kpi",
     "data": {
-      "timestamp": 1476460860,
-      "value": 0.0177857682319,
+      "timestamp": 1493568060,
+      "value": 1.7868852615400002,
       "label": 0,
-      "KPI ID": "da10a69f-d836-3baa-ad40-3e548ecf1fbd"
+      "KPI ID": "02e99bd4f6cfb33f"
     },
     "question": "Analyze this KPI time-series data and determine if there is an anomaly. Explain your reasoning."
   },
@@ -28,10 +28,10 @@
     "task": "kpi_anomaly_detection",
     "dataset": "real_kpi",
     "data": {
-      "timestamp": 1476460920,
-      "value": 0.0120135944311,
+      "timestamp": 1493568120,
+      "value": 2.0,
       "label": 0,
-      "KPI ID": "da10a69f-d836-3baa-ad40-3e548ecf1fbd"
+      "KPI ID": "02e99bd4f6cfb33f"
     },
     "question": "Analyze this KPI time-series data and determine if there is an anomaly. Explain your reasoning."
   },
@@ -40,10 +40,10 @@
     "task": "kpi_anomaly_detection",
     "dataset": "real_kpi",
     "data": {
-      "timestamp": 1476460980,
-      "value": 0.0170615691329,
+      "timestamp": 1493568180,
+      "value": 1.88524591923,
       "label": 0,
-      "KPI ID": "da10a69f-d836-3baa-ad40-3e548ecf1fbd"
+      "KPI ID": "02e99bd4f6cfb33f"
     },
     "question": "Analyze this KPI time-series data and determine if there is an anomaly. Explain your reasoning."
   },
@@ -52,10 +52,10 @@
     "task": "kpi_anomaly_detection",
     "dataset": "real_kpi",
     "data": {
-      "timestamp": 1476461040,
-      "value": 0.0236316875479,
+      "timestamp": 1493568240,
+      "value": 1.8196721077,
       "label": 0,
-      "KPI ID": "da10a69f-d836-3baa-ad40-3e548ecf1fbd"
+      "KPI ID": "02e99bd4f6cfb33f"
     },
     "question": "Analyze this KPI time-series data and determine if there is an anomaly. Explain your reasoning."
   },
@@ -64,10 +64,10 @@
     "task": "kpi_anomaly_detection",
     "dataset": "real_kpi",
     "data": {
-      "timestamp": 1476461100,
-      "value": 0.0144916565357,
+      "timestamp": 1493568300,
+      "value": 1.88524591923,
       "label": 0,
-      "KPI ID": "da10a69f-d836-3baa-ad40-3e548ecf1fbd"
+      "KPI ID": "02e99bd4f6cfb33f"
     },
     "question": "Analyze this KPI time-series data and determine if there is an anomaly. Explain your reasoning."
   },
@@ -76,10 +76,10 @@
     "task": "kpi_anomaly_detection",
     "dataset": "real_kpi",
     "data": {
-      "timestamp": 1476461160,
-      "value": 0.0128803135405,
+      "timestamp": 1493568360,
+      "value": 1.88524591923,
       "label": 0,
-      "KPI ID": "da10a69f-d836-3baa-ad40-3e548ecf1fbd"
+      "KPI ID": "02e99bd4f6cfb33f"
     },
     "question": "Analyze this KPI time-series data and determine if there is an anomaly. Explain your reasoning."
   },
@@ -88,10 +88,10 @@
     "task": "kpi_anomaly_detection",
     "dataset": "real_kpi",
     "data": {
-      "timestamp": 1476461220,
-      "value": 0.0638057255683,
+      "timestamp": 1493568420,
+      "value": 1.93442618847,
       "label": 0,
-      "KPI ID": "da10a69f-d836-3baa-ad40-3e548ecf1fbd"
+      "KPI ID": "02e99bd4f6cfb33f"
     },
     "question": "Analyze this KPI time-series data and determine if there is an anomaly. Explain your reasoning."
   },
@@ -100,10 +100,10 @@
     "task": "kpi_anomaly_detection",
     "dataset": "real_kpi",
     "data": {
-      "timestamp": 1476461280,
-      "value": 0.0130068216346,
+      "timestamp": 1493568480,
+      "value": 1.96721315384,
       "label": 0,
-      "KPI ID": "da10a69f-d836-3baa-ad40-3e548ecf1fbd"
+      "KPI ID": "02e99bd4f6cfb33f"
     },
     "question": "Analyze this KPI time-series data and determine if there is an anomaly. Explain your reasoning."
   },
@@ -112,10 +112,10 @@
     "task": "kpi_anomaly_detection",
     "dataset": "real_kpi",
     "data": {
-      "timestamp": 1476461340,
-      "value": 0.0153069037872,
+      "timestamp": 1493568540,
+      "value": 1.95081973076,
       "label": 0,
-      "KPI ID": "da10a69f-d836-3baa-ad40-3e548ecf1fbd"
+      "KPI ID": "02e99bd4f6cfb33f"
     },
     "question": "Analyze this KPI time-series data and determine if there is an anomaly. Explain your reasoning."
   },
@@ -124,10 +124,10 @@
     "task": "kpi_anomaly_detection",
     "dataset": "real_kpi",
     "data": {
-      "timestamp": 1476461400,
-      "value": 0.0164837447652,
+      "timestamp": 1493568600,
+      "value": 1.95081973076,
       "label": 0,
-      "KPI ID": "da10a69f-d836-3baa-ad40-3e548ecf1fbd"
+      "KPI ID": "02e99bd4f6cfb33f"
     },
     "question": "Analyze this KPI time-series data and determine if there is an anomaly. Explain your reasoning."
   },
@@ -136,10 +136,10 @@
     "task": "kpi_anomaly_detection",
     "dataset": "real_kpi",
     "data": {
-      "timestamp": 1476461460,
-      "value": 0.011614220954,
+      "timestamp": 1493568660,
+      "value": 1.95081973076,
       "label": 0,
-      "KPI ID": "da10a69f-d836-3baa-ad40-3e548ecf1fbd"
+      "KPI ID": "02e99bd4f6cfb33f"
     },
     "question": "Analyze this KPI time-series data and determine if there is an anomaly. Explain your reasoning."
   },
@@ -148,10 +148,10 @@
     "task": "kpi_anomaly_detection",
     "dataset": "real_kpi",
     "data": {
-      "timestamp": 1476461520,
-      "value": 0.0127073220506,
+      "timestamp": 1493568720,
+      "value": 1.90163934231,
       "label": 0,
-      "KPI ID": "da10a69f-d836-3baa-ad40-3e548ecf1fbd"
+      "KPI ID": "02e99bd4f6cfb33f"
     },
     "question": "Analyze this KPI time-series data and determine if there is an anomaly. Explain your reasoning."
   },
@@ -160,10 +160,10 @@
     "task": "kpi_anomaly_detection",
     "dataset": "real_kpi",
     "data": {
-      "timestamp": 1476461580,
-      "value": 0.0138851397903,
+      "timestamp": 1493568780,
+      "value": 1.93442618847,
       "label": 0,
-      "KPI ID": "da10a69f-d836-3baa-ad40-3e548ecf1fbd"
+      "KPI ID": "02e99bd4f6cfb33f"
     },
     "question": "Analyze this KPI time-series data and determine if there is an anomaly. Explain your reasoning."
   },
@@ -172,10 +172,10 @@
     "task": "kpi_anomaly_detection",
     "dataset": "real_kpi",
     "data": {
-      "timestamp": 1476461640,
-      "value": 0.00934096486623,
+      "timestamp": 1493568840,
+      "value": 1.80327868462,
       "label": 0,
-      "KPI ID": "da10a69f-d836-3baa-ad40-3e548ecf1fbd"
+      "KPI ID": "02e99bd4f6cfb33f"
     },
     "question": "Analyze this KPI time-series data and determine if there is an anomaly. Explain your reasoning."
   },
@@ -184,10 +184,10 @@
     "task": "kpi_anomaly_detection",
     "dataset": "real_kpi",
     "data": {
-      "timestamp": 1476461700,
-      "value": 0.0236088382988,
+      "timestamp": 1493568900,
+      "value": 1.83606553078,
       "label": 0,
-      "KPI ID": "da10a69f-d836-3baa-ad40-3e548ecf1fbd"
+      "KPI ID": "02e99bd4f6cfb33f"
     },
     "question": "Analyze this KPI time-series data and determine if there is an anomaly. Explain your reasoning."
   },
@@ -196,10 +196,10 @@
     "task": "kpi_anomaly_detection",
     "dataset": "real_kpi",
     "data": {
-      "timestamp": 1476461760,
-      "value": 0.0110270301382999,
+      "timestamp": 1493568960,
+      "value": 1.91803276539,
       "label": 0,
-      "KPI ID": "da10a69f-d836-3baa-ad40-3e548ecf1fbd"
+      "KPI ID": "02e99bd4f6cfb33f"
     },
     "question": "Analyze this KPI time-series data and determine if there is an anomaly. Explain your reasoning."
   },
@@ -208,10 +208,10 @@
     "task": "kpi_anomaly_detection",
     "dataset": "real_kpi",
     "data": {
-      "timestamp": 1476461820,
-      "value": 0.0100876120442,
+      "timestamp": 1493569020,
+      "value": 2.0491802692400003,
       "label": 0,
-      "KPI ID": "da10a69f-d836-3baa-ad40-3e548ecf1fbd"
+      "KPI ID": "02e99bd4f6cfb33f"
     },
     "question": "Analyze this KPI time-series data and determine if there is an anomaly. Explain your reasoning."
   },
@@ -220,10 +220,10 @@
     "task": "kpi_anomaly_detection",
     "dataset": "real_kpi",
     "data": {
-      "timestamp": 1476461880,
-      "value": 0.0114122231273,
+      "timestamp": 1493569080,
+      "value": 1.96721315384,
       "label": 0,
-      "KPI ID": "da10a69f-d836-3baa-ad40-3e548ecf1fbd"
+      "KPI ID": "02e99bd4f6cfb33f"
     },
     "question": "Analyze this KPI time-series data and determine if there is an anomaly. Explain your reasoning."
   },
@@ -232,10 +232,10 @@
     "task": "kpi_anomaly_detection",
     "dataset": "real_kpi",
     "data": {
-      "timestamp": 1476461940,
-      "value": 0.0109104466418,
+      "timestamp": 1493569140,
+      "value": 2.03278684616,
       "label": 0,
-      "KPI ID": "da10a69f-d836-3baa-ad40-3e548ecf1fbd"
+      "KPI ID": "02e99bd4f6cfb33f"
     },
     "question": "Analyze this KPI time-series data and determine if there is an anomaly. Explain your reasoning."
   },
@@ -244,10 +244,10 @@
     "task": "kpi_anomaly_detection",
     "dataset": "real_kpi",
     "data": {
-      "timestamp": 1476462000,
-      "value": 0.013620228039,
+      "timestamp": 1493569200,
+      "value": 2.1803278923,
       "label": 0,
-      "KPI ID": "da10a69f-d836-3baa-ad40-3e548ecf1fbd"
+      "KPI ID": "02e99bd4f6cfb33f"
     },
     "question": "Analyze this KPI time-series data and determine if there is an anomaly. Explain your reasoning."
   },
@@ -256,10 +256,10 @@
     "task": "kpi_anomaly_detection",
     "dataset": "real_kpi",
     "data": {
-      "timestamp": 1476462060,
-      "value": 0.0102209400286,
+      "timestamp": 1493569260,
+      "value": 1.93442618847,
       "label": 0,
-      "KPI ID": "da10a69f-d836-3baa-ad40-3e548ecf1fbd"
+      "KPI ID": "02e99bd4f6cfb33f"
     },
     "question": "Analyze this KPI time-series data and determine if there is an anomaly. Explain your reasoning."
   },
@@ -268,10 +268,10 @@
     "task": "kpi_anomaly_detection",
     "dataset": "real_kpi",
     "data": {
-      "timestamp": 1476462120,
-      "value": 0.0134437132297,
+      "timestamp": 1493569320,
+      "value": 1.95081973076,
       "label": 0,
-      "KPI ID": "da10a69f-d836-3baa-ad40-3e548ecf1fbd"
+      "KPI ID": "02e99bd4f6cfb33f"
     },
     "question": "Analyze this KPI time-series data and determine if there is an anomaly. Explain your reasoning."
   },
@@ -280,10 +280,10 @@
     "task": "kpi_anomaly_detection",
     "dataset": "real_kpi",
     "data": {
-      "timestamp": 1476462180,
-      "value": 0.0094109079873,
+      "timestamp": 1493569380,
+      "value": 1.93442618847,
       "label": 0,
-      "KPI ID": "da10a69f-d836-3baa-ad40-3e548ecf1fbd"
+      "KPI ID": "02e99bd4f6cfb33f"
     },
     "question": "Analyze this KPI time-series data and determine if there is an anomaly. Explain your reasoning."
   },
@@ -292,10 +292,10 @@
     "task": "kpi_anomaly_detection",
     "dataset": "real_kpi",
     "data": {
-      "timestamp": 1476462240,
-      "value": 0.0099999302313,
+      "timestamp": 1493569440,
+      "value": 1.98360657692,
       "label": 0,
-      "KPI ID": "da10a69f-d836-3baa-ad40-3e548ecf1fbd"
+      "KPI ID": "02e99bd4f6cfb33f"
     },
     "question": "Analyze this KPI time-series data and determine if there is an anomaly. Explain your reasoning."
   },
@@ -304,10 +304,10 @@
     "task": "kpi_anomaly_detection",
     "dataset": "real_kpi",
     "data": {
-      "timestamp": 1476462300,
-      "value": 0.0097590537969,
+      "timestamp": 1493569500,
+      "value": 2.03278684616,
       "label": 0,
-      "KPI ID": "da10a69f-d836-3baa-ad40-3e548ecf1fbd"
+      "KPI ID": "02e99bd4f6cfb33f"
     },
     "question": "Analyze this KPI time-series data and determine if there is an anomaly. Explain your reasoning."
   },
@@ -316,10 +316,10 @@
     "task": "kpi_anomaly_detection",
     "dataset": "real_kpi",
     "data": {
-      "timestamp": 1476462360,
-      "value": 0.0074983735172,
+      "timestamp": 1493569560,
+      "value": 2.31147551537,
       "label": 0,
-      "KPI ID": "da10a69f-d836-3baa-ad40-3e548ecf1fbd"
+      "KPI ID": "02e99bd4f6cfb33f"
     },
     "question": "Analyze this KPI time-series data and determine if there is an anomaly. Explain your reasoning."
   },
@@ -328,10 +328,10 @@
     "task": "kpi_anomaly_detection",
     "dataset": "real_kpi",
     "data": {
-      "timestamp": 1476462420,
-      "value": 0.0123812057078,
+      "timestamp": 1493569620,
+      "value": 2.03278684616,
       "label": 0,
-      "KPI ID": "da10a69f-d836-3baa-ad40-3e548ecf1fbd"
+      "KPI ID": "02e99bd4f6cfb33f"
     },
     "question": "Analyze this KPI time-series data and determine if there is an anomaly. Explain your reasoning."
   },
@@ -340,10 +340,10 @@
     "task": "kpi_anomaly_detection",
     "dataset": "real_kpi",
     "data": {
-      "timestamp": 1476462480,
-      "value": 0.0131163584925,
+      "timestamp": 1493569680,
+      "value": 1.95081973076,
       "label": 0,
-      "KPI ID": "da10a69f-d836-3baa-ad40-3e548ecf1fbd"
+      "KPI ID": "02e99bd4f6cfb33f"
     },
     "question": "Analyze this KPI time-series data and determine if there is an anomaly. Explain your reasoning."
   },
@@ -352,10 +352,10 @@
     "task": "kpi_anomaly_detection",
     "dataset": "real_kpi",
     "data": {
-      "timestamp": 1476462540,
-      "value": 0.0099898137699,
+      "timestamp": 1493569740,
+      "value": 2.19672131538,
       "label": 0,
-      "KPI ID": "da10a69f-d836-3baa-ad40-3e548ecf1fbd"
+      "KPI ID": "02e99bd4f6cfb33f"
     },
     "question": "Analyze this KPI time-series data and determine if there is an anomaly. Explain your reasoning."
   },
@@ -364,10 +364,10 @@
     "task": "kpi_anomaly_detection",
     "dataset": "real_kpi",
     "data": {
-      "timestamp": 1476462600,
-      "value": 0.01167089058,
+      "timestamp": 1493569800,
+      "value": 2.0,
       "label": 0,
-      "KPI ID": "da10a69f-d836-3baa-ad40-3e548ecf1fbd"
+      "KPI ID": "02e99bd4f6cfb33f"
     },
     "question": "Analyze this KPI time-series data and determine if there is an anomaly. Explain your reasoning."
   },
@@ -376,10 +376,10 @@
     "task": "kpi_anomaly_detection",
     "dataset": "real_kpi",
     "data": {
-      "timestamp": 1476462660,
-      "value": 0.0141780287901,
+      "timestamp": 1493569860,
+      "value": 2.40983605385,
       "label": 0,
-      "KPI ID": "da10a69f-d836-3baa-ad40-3e548ecf1fbd"
+      "KPI ID": "02e99bd4f6cfb33f"
     },
     "question": "Analyze this KPI time-series data and determine if there is an anomaly. Explain your reasoning."
   },
@@ -388,10 +388,10 @@
     "task": "kpi_anomaly_detection",
     "dataset": "real_kpi",
     "data": {
-      "timestamp": 1476462720,
-      "value": 0.00961236510658,
+      "timestamp": 1493569920,
+      "value": 2.32786893845,
       "label": 0,
-      "KPI ID": "da10a69f-d836-3baa-ad40-3e548ecf1fbd"
+      "KPI ID": "02e99bd4f6cfb33f"
     },
     "question": "Analyze this KPI time-series data and determine if there is an anomaly. Explain your reasoning."
   },
@@ -400,10 +400,10 @@
     "task": "kpi_anomaly_detection",
     "dataset": "real_kpi",
     "data": {
-      "timestamp": 1476462780,
-      "value": 0.0085784453091899,
+      "timestamp": 1493569980,
+      "value": 2.0819671154,
       "label": 0,
-      "KPI ID": "da10a69f-d836-3baa-ad40-3e548ecf1fbd"
+      "KPI ID": "02e99bd4f6cfb33f"
     },
     "question": "Analyze this KPI time-series data and determine if there is an anomaly. Explain your reasoning."
   },
@@ -412,10 +412,10 @@
     "task": "kpi_anomaly_detection",
     "dataset": "real_kpi",
     "data": {
-      "timestamp": 1476462840,
-      "value": 0.0113222912739,
+      "timestamp": 1493570040,
+      "value": 2.13114762306,
       "label": 0,
-      "KPI ID": "da10a69f-d836-3baa-ad40-3e548ecf1fbd"
+      "KPI ID": "02e99bd4f6cfb33f"
     },
     "question": "Analyze this KPI time-series data and determine if there is an anomaly. Explain your reasoning."
   },
@@ -424,10 +424,10 @@
     "task": "kpi_anomaly_detection",
     "dataset": "real_kpi",
     "data": {
-      "timestamp": 1476462900,
-      "value": 0.00956937014562,
+      "timestamp": 1493570100,
+      "value": 2.16393446922,
       "label": 0,
-      "KPI ID": "da10a69f-d836-3baa-ad40-3e548ecf1fbd"
+      "KPI ID": "02e99bd4f6cfb33f"
     },
     "question": "Analyze this KPI time-series data and determine if there is an anomaly. Explain your reasoning."
   },
@@ -436,10 +436,10 @@
     "task": "kpi_anomaly_detection",
     "dataset": "real_kpi",
     "data": {
-      "timestamp": 1476462960,
-      "value": 0.00907469262527,
+      "timestamp": 1493570160,
+      "value": 2.14754104614,
       "label": 0,
-      "KPI ID": "da10a69f-d836-3baa-ad40-3e548ecf1fbd"
+      "KPI ID": "02e99bd4f6cfb33f"
     },
     "question": "Analyze this KPI time-series data and determine if there is an anomaly. Explain your reasoning."
   },
@@ -448,10 +448,10 @@
     "task": "kpi_anomaly_detection",
     "dataset": "real_kpi",
     "data": {
-      "timestamp": 1476463020,
-      "value": 0.00912778660546,
+      "timestamp": 1493570220,
+      "value": 2.16393446922,
       "label": 0,
-      "KPI ID": "da10a69f-d836-3baa-ad40-3e548ecf1fbd"
+      "KPI ID": "02e99bd4f6cfb33f"
     },
     "question": "Analyze this KPI time-series data and determine if there is an anomaly. Explain your reasoning."
   },
@@ -460,10 +460,10 @@
     "task": "kpi_anomaly_detection",
     "dataset": "real_kpi",
     "data": {
-      "timestamp": 1476463080,
-      "value": 0.0096488018098,
+      "timestamp": 1493570280,
+      "value": 2.14754104614,
       "label": 0,
-      "KPI ID": "da10a69f-d836-3baa-ad40-3e548ecf1fbd"
+      "KPI ID": "02e99bd4f6cfb33f"
     },
     "question": "Analyze this KPI time-series data and determine if there is an anomaly. Explain your reasoning."
   },
@@ -472,10 +472,10 @@
     "task": "kpi_anomaly_detection",
     "dataset": "real_kpi",
     "data": {
-      "timestamp": 1476463140,
-      "value": 0.00756847361784,
+      "timestamp": 1493570340,
+      "value": 2.24590158463,
       "label": 0,
-      "KPI ID": "da10a69f-d836-3baa-ad40-3e548ecf1fbd"
+      "KPI ID": "02e99bd4f6cfb33f"
     },
     "question": "Analyze this KPI time-series data and determine if there is an anomaly. Explain your reasoning."
   },
@@ -484,10 +484,10 @@
     "task": "kpi_anomaly_detection",
     "dataset": "real_kpi",
     "data": {
-      "timestamp": 1476463200,
-      "value": 0.00793038130338,
+      "timestamp": 1493570400,
+      "value": 2.06557369232,
       "label": 0,
-      "KPI ID": "da10a69f-d836-3baa-ad40-3e548ecf1fbd"
+      "KPI ID": "02e99bd4f6cfb33f"
     },
     "question": "Analyze this KPI time-series data and determine if there is an anomaly. Explain your reasoning."
   },
@@ -496,10 +496,10 @@
     "task": "kpi_anomaly_detection",
     "dataset": "real_kpi",
     "data": {
-      "timestamp": 1476463260,
-      "value": 0.00740209271214,
+      "timestamp": 1493570460,
+      "value": 2.0,
       "label": 0,
-      "KPI ID": "da10a69f-d836-3baa-ad40-3e548ecf1fbd"
+      "KPI ID": "02e99bd4f6cfb33f"
     },
     "question": "Analyze this KPI time-series data and determine if there is an anomaly. Explain your reasoning."
   },
@@ -508,10 +508,10 @@
     "task": "kpi_anomaly_detection",
     "dataset": "real_kpi",
     "data": {
-      "timestamp": 1476463320,
-      "value": 0.0117662992762999,
+      "timestamp": 1493570520,
+      "value": 2.0,
       "label": 0,
-      "KPI ID": "da10a69f-d836-3baa-ad40-3e548ecf1fbd"
+      "KPI ID": "02e99bd4f6cfb33f"
     },
     "question": "Analyze this KPI time-series data and determine if there is an anomaly. Explain your reasoning."
   },
@@ -520,10 +520,10 @@
     "task": "kpi_anomaly_detection",
     "dataset": "real_kpi",
     "data": {
-      "timestamp": 1476463380,
-      "value": 0.0100934202884,
+      "timestamp": 1493570580,
+      "value": 2.06557369232,
       "label": 0,
-      "KPI ID": "da10a69f-d836-3baa-ad40-3e548ecf1fbd"
+      "KPI ID": "02e99bd4f6cfb33f"
     },
     "question": "Analyze this KPI time-series data and determine if there is an anomaly. Explain your reasoning."
   },
@@ -532,10 +532,10 @@
     "task": "kpi_anomaly_detection",
     "dataset": "real_kpi",
     "data": {
-      "timestamp": 1476463440,
-      "value": 0.0088152228325,
+      "timestamp": 1493570640,
+      "value": 1.93442618847,
       "label": 0,
-      "KPI ID": "da10a69f-d836-3baa-ad40-3e548ecf1fbd"
+      "KPI ID": "02e99bd4f6cfb33f"
     },
     "question": "Analyze this KPI time-series data and determine if there is an anomaly. Explain your reasoning."
   },
@@ -544,10 +544,10 @@
     "task": "kpi_anomaly_detection",
     "dataset": "real_kpi",
     "data": {
-      "timestamp": 1476463500,
-      "value": 0.006108406605,
+      "timestamp": 1493570700,
+      "value": 2.0,
       "label": 0,
-      "KPI ID": "da10a69f-d836-3baa-ad40-3e548ecf1fbd"
+      "KPI ID": "02e99bd4f6cfb33f"
     },
     "question": "Analyze this KPI time-series data and determine if there is an anomaly. Explain your reasoning."
   },
@@ -556,10 +556,10 @@
     "task": "kpi_anomaly_detection",
     "dataset": "real_kpi",
     "data": {
-      "timestamp": 1476463560,
-      "value": 0.0106817448453999,
+      "timestamp": 1493570760,
+      "value": 2.24590158463,
       "label": 0,
-      "KPI ID": "da10a69f-d836-3baa-ad40-3e548ecf1fbd"
+      "KPI ID": "02e99bd4f6cfb33f"
     },
     "question": "Analyze this KPI time-series data and determine if there is an anomaly. Explain your reasoning."
   },
@@ -568,10 +568,10 @@
     "task": "kpi_anomaly_detection",
     "dataset": "real_kpi",
     "data": {
-      "timestamp": 1476463620,
-      "value": 0.00998056941724,
+      "timestamp": 1493570820,
+      "value": 2.24590158463,
       "label": 0,
-      "KPI ID": "da10a69f-d836-3baa-ad40-3e548ecf1fbd"
+      "KPI ID": "02e99bd4f6cfb33f"
     },
     "question": "Analyze this KPI time-series data and determine if there is an anomaly. Explain your reasoning."
   },
@@ -580,10 +580,10 @@
     "task": "kpi_anomaly_detection",
     "dataset": "real_kpi",
     "data": {
-      "timestamp": 1476463680,
-      "value": 0.0136108092646,
+      "timestamp": 1493570880,
+      "value": 2.1803278923,
       "label": 0,
-      "KPI ID": "da10a69f-d836-3baa-ad40-3e548ecf1fbd"
+      "KPI ID": "02e99bd4f6cfb33f"
     },
     "question": "Analyze this KPI time-series data and determine if there is an anomaly. Explain your reasoning."
   },
@@ -592,10 +592,10 @@
     "task": "kpi_anomaly_detection",
     "dataset": "real_kpi",
     "data": {
-      "timestamp": 1476463740,
-      "value": 0.00914735672562,
+      "timestamp": 1493570940,
+      "value": 2.26229500771,
       "label": 0,
-      "KPI ID": "da10a69f-d836-3baa-ad40-3e548ecf1fbd"
+      "KPI ID": "02e99bd4f6cfb33f"
     },
     "question": "Analyze this KPI time-series data and determine if there is an anomaly. Explain your reasoning."
   },

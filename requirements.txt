@@ -18,7 +18,14 @@ openai>=1.0.0
 requests>=2.31.0
 aiohttp>=3.9.0
 
-# For local model inference (uncomment when needed)
+# HuggingFace for model downloads
+huggingface-hub>=0.20.0
+
+# For local model inference with GGUF models (LLaMA-3, Phi-3)
+llama-cpp-python>=0.2.0
+# For GPU support (CUDA), install with: CMAKE_ARGS="-DLLAMA_CUBLAS=on" pip install llama-cpp-python
+
+# Alternative: Full transformers support (heavier, uncomment if needed)
 # transformers>=4.35.0
 # torch>=2.1.0
 # accelerate>=0.24.0

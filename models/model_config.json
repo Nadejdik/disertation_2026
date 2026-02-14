@@ -1,0 +1,14 @@
+{
+  "llama3": {
+    "model_dir": "C:\\Users\\Leore\\Downloads\\disertation_2026-main\\disertation_2026-main\\models\\LLaMA-3-8B",
+    "model_file": "Meta-Llama-3-8B-Instruct-Q4_K_M.gguf",
+    "context_length": 8192,
+    "type": "gguf"
+  },
+  "phi3": {
+    "model_dir": "C:\\Users\\Leore\\Downloads\\disertation_2026-main\\disertation_2026-main\\models\\Phi-3-Mini",
+    "model_file": "Phi-3-mini-4k-instruct-Q4_K_M.gguf",
+    "context_length": 4096,
+    "type": "gguf"
+  }
+}

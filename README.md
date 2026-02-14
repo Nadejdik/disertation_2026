@@ -45,6 +45,25 @@ mypythondata/
 
 ## Installation
 
+### Option A: Quick Setup (Recommended)
+
+**For Windows PowerShell:**
+```powershell
+.\setup_models.ps1
+```
+
+**For Windows Command Prompt:**
+```cmd
+setup_models.bat
+```
+
+This will:
+- Install all dependencies (including llama-cpp-python)
+- Download LLaMA-3 8B and Phi-3 Mini models (~8GB)
+- Set up everything you need to run local models
+
+### Option B: Manual Setup
+
 1. **Clone the repository:**
 ```bash
 git clone <repository-url>
@@ -62,15 +81,42 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-4. **Configure API keys:**
+4. **Setup local models (LLaMA-3 & Phi-3):**
+```bash
+# Install model runner
+pip install llama-cpp-python
+
+# Download models (requires ~8GB storage, 10-30 min download)
+python models/download_models.py
+```
+
+5. **Configure API keys (for GPT-4):**
 ```bash
 cp .env.example .env
-# Edit .env and add your API keys
+# Edit .env and add your OpenAI API key
 ```
+
+**Note:** You can run experiments with local models (LLaMA-3, Phi-3) without API keys!
 
 ## Quick Start
 
-### 1. Generate Synthetic Datasets
+### 1. Test Local Models
+
+After running setup, test that LLaMA-3 and Phi-3 are working:
+
+```bash
+# Interactive model runner
+python models/run_models.py
+
+# Or use in Python
+python
+>>> from src.llm_interface import ModelFactory
+>>> llama = ModelFactory.create_model('llama-3')
+>>> result = llama.generate("Explain what is a timeout in telecom systems")
+>>> print(result['response'])
+```
+
+### 2. Generate Synthetic Datasets
 
 ```bash
 python datasets/generate_synthetic_telecom_faults.py
@@ -78,16 +124,25 @@ python datasets/generate_kpi_anomalies.py
 python datasets/generate_microservices_faults.py
 ```
 
-### 2. Run Experiments
+### 3. Run Experiments
 
-Open the Jupyter notebook:
+**Option A: Command Line**
+```bash
+# Run with all models (GPT-4, LLaMA-3, Phi-3)
+python run_experiments.py
+
+# Run with local models only (no API key needed)
+python run_real_experiments.py
+```
+
+**Option B: Jupyter Notebook**
 ```bash
 jupyter notebook notebooks/dissertation_experiments.ipynb
 ```
 
 Follow the notebook cells to:
 - Generate datasets
-- Configure LLM models
+- Configure LLM models (GPT-4, LLaMA-3, Phi-3)
 - Run evaluations
 - Calculate metrics
 - Generate visualizations

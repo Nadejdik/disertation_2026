@@ -9,7 +9,7 @@ from datetime import datetime
 
 # Dataset paths - Updated to use Downloads folder
 KPI_DATASET = Path(r"C:\Users\Leore\Downloads\KPI-Anomaly-Detection-master\KPI-Anomaly-Detection-master\Preliminary_dataset\train.csv")
-SOCKSHOP_DIR = Path(r"C:\Users\Leore\Downloads\sockshop_stress_test\generated_csvs_4")
+SOCKSHOP_DIR = Path(r"C:\Users\Leore\Downloads\disertation_2026-main\disertation_2026-main\datasets\sockshop_stress_test\generated_csvs_4")
 
 # Output paths
 OUTPUT_DIR = Path("datasets/processed")

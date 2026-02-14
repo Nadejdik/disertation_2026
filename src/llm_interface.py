@@ -1,4 +1,5 @@
 """
+"""
 LLM Model Interface - Unified API for different LLM models
 Supports: GPT-4 (OpenAI), LLaMA-3 (local/API), Phi-3 (local)
 """
@@ -7,7 +8,15 @@ import json
 import time
 from abc import ABC, abstractmethod
 from typing import List, Dict, Any, Optional
+from pathlib import Path
 from openai import OpenAI
+
+try:
+    from llama_cpp import Llama
+    LLAMA_CPP_AVAILABLE = True
+except ImportError:
+    LLAMA_CPP_AVAILABLE = False
+    print("[WARNING] llama-cpp-python not available. Local models will not work.")
 
 
 class BaseLLMModel(ABC):
@@ -111,19 +120,54 @@ class LLaMA3Model(BaseLLMModel):
             self._load_local_model()
     
     def _load_local_model(self):
-        """Load LLaMA-3 model locally"""
+        """Load LLaMA-3 model locally using llama-cpp-python"""
+        if not LLAMA_CPP_AVAILABLE:
+            print("[ERROR] llama-cpp-python not installed. Install with: pip install llama-cpp-python")
+            self.model_loaded = False
+            return
+        
         try:
-            # Placeholder for actual model loading
-            # You would use transformers, llama.cpp, or similar
-            # from transformers import AutoModelForCausalLM, AutoTokenizer
-            # self.tokenizer = AutoTokenizer.from_pretrained(self.model_path)
-            # self.model = AutoModelForCausalLM.from_pretrained(self.model_path)
-            print(f"[INFO] LLaMA-3 local model loading from: {self.model_path}")
-            print("[INFO] Note: Actual model loading code needs to be implemented")
-            self.model_loaded = False  # Set to True when actually loaded
+            # Find model file
+            model_path = self._find_model_file()
+            if not model_path:
+                print(f"[ERROR] Model file not found in: {self.model_path}")
+                self.model_loaded = False
+                return
+            
+            print(f"[INFO] Loading LLaMA-3 from: {model_path}")
+            
+            self.model = Llama(
+                model_path=str(model_path),
+                n_ctx=8192,  # Context window
+                n_threads=4,
+                n_gpu_layers=-1,  # Use GPU if available
+                verbose=False
+            )
+            
+            self.model_loaded = True
+            print(f"[SUCCESS] LLaMA-3 model loaded successfully")
+            
         except Exception as e:
             print(f"[ERROR] Failed to load LLaMA-3 model: {e}")
             self.model_loaded = False
+    
+    def _find_model_file(self):
+        """Find the GGUF model file"""
+        if not self.model_path:
+            # Try to load from models directory
+            models_dir = Path(__file__).parent.parent / "models" / "LLaMA-3-8B"
+            if not models_dir.exists():
+                return None
+            self.model_path = str(models_dir)
+        
+        search_path = Path(self.model_path)
+        
+        # Look for GGUF files
+        gguf_files = list(search_path.glob("*.gguf"))
+        if gguf_files:
+            return str(gguf_files[0])
+        
+        return None
     
     def generate(self, prompt: str, system_prompt: Optional[str] = None) -> Dict[str, Any]:
         """Generate response using LLaMA-3"""
@@ -190,7 +234,7 @@ class LLaMA3Model(BaseLLMModel):
             }
     
     def _generate_local(self, prompt: str, system_prompt: Optional[str] = None) -> Dict[str, Any]:
-        """Generate using local model"""
+        """Generate using local model with llama-cpp-python"""
         if not hasattr(self, 'model_loaded') or not self.model_loaded:
             return {
                 'response': None,
@@ -199,29 +243,38 @@ class LLaMA3Model(BaseLLMModel):
                 'latency_seconds': 0,
                 'finish_reason': None,
                 'success': False,
-                'error': 'Local model not loaded. Implement model loading first.'
+                'error': 'Local model not loaded. Run download_models.py first.'
             }
         
         try:
-            # Placeholder for actual inference
-            # full_prompt = f"{system_prompt}\n\n{prompt}" if system_prompt else prompt
-            # inputs = self.tokenizer(full_prompt, return_tensors="pt")
-            # outputs = self.model.generate(**inputs, max_new_tokens=self.max_tokens)
-            # response_text = self.tokenizer.decode(outputs[0])
+            # Format prompt
+            full_prompt = f"{system_prompt}\n\n{prompt}" if system_prompt else prompt
             
             start_time = time.time()
-            # Simulated response for now
-            response_text = "[Simulated LLaMA-3 response - implement actual inference]"
+            
+            # Generate response
+            output = self.model(
+                full_prompt,
+                max_tokens=self.max_tokens,
+                temperature=self.temperature,
+                stop=["</s>", "<|end|>"],
+                echo=False
+            )
+            
             end_time = time.time()
             
+            response_text = output['choices'][0]['text']
+            tokens_used = output['usage']['total_tokens']
+            
             self.total_requests += 1
+            self.total_tokens_used += tokens_used
             
             return {
                 'response': response_text,
                 'model': self.model_name,
-                'tokens_used': 0,  # Calculate actual tokens
+                'tokens_used': tokens_used,
                 'latency_seconds': end_time - start_time,
-                'finish_reason': 'stop',
+                'finish_reason': output['choices'][0].get('finish_reason', 'stop'),
                 'success': True,
                 'error': None
             }
@@ -247,21 +300,57 @@ class Phi3Model(BaseLLMModel):
         self._load_model()
     
     def _load_model(self):
-        """Load Phi-3 model"""
+        """Load Phi-3 model using llama-cpp-python"""
+        if not LLAMA_CPP_AVAILABLE:
+            print("[ERROR] llama-cpp-python not installed. Install with: pip install llama-cpp-python")
+            self.model_loaded = False
+            return
+        
         try:
-            # Placeholder for actual model loading
-            # from transformers import AutoModelForCausalLM, AutoTokenizer
-            # self.tokenizer = AutoTokenizer.from_pretrained(self.model_path, trust_remote_code=True)
-            # self.model = AutoModelForCausalLM.from_pretrained(self.model_path, trust_remote_code=True)
-            print(f"[INFO] Phi-3 model loading from: {self.model_path}")
-            print("[INFO] Note: Actual model loading code needs to be implemented")
-            self.model_loaded = False  # Set to True when actually loaded
+            # Find model file
+            model_path = self._find_model_file()
+            if not model_path:
+                print(f"[ERROR] Model file not found in: {self.model_path}")
+                self.model_loaded = False
+                return
+            
+            print(f"[INFO] Loading Phi-3 from: {model_path}")
+            
+            self.model = Llama(
+                model_path=str(model_path),
+                n_ctx=4096,  # Phi-3 has 4k context window
+                n_threads=4,
+                n_gpu_layers=-1,  # Use GPU if available
+                verbose=False
+            )
+            
+            self.model_loaded = True
+            print(f"[SUCCESS] Phi-3 model loaded successfully")
+            
         except Exception as e:
             print(f"[ERROR] Failed to load Phi-3 model: {e}")
             self.model_loaded = False
     
+    def _find_model_file(self):
+        """Find the GGUF model file"""
+        if self.model_path == "microsoft/Phi-3-mini-4k-instruct":
+            # Use local downloaded model
+            models_dir = Path(__file__).parent.parent / "models" / "Phi-3-Mini"
+            if not models_dir.exists():
+                return None
+            self.model_path = str(models_dir)
+        
+        search_path = Path(self.model_path)
+        
+        # Look for GGUF files
+        gguf_files = list(search_path.glob("*.gguf"))
+        if gguf_files:
+            return str(gguf_files[0])
+        
+        return None
+    
     def generate(self, prompt: str, system_prompt: Optional[str] = None) -> Dict[str, Any]:
-        """Generate response using Phi-3"""
+        """Generate response using Phi-3 with llama-cpp-python"""
         
         if not hasattr(self, 'model_loaded') or not self.model_loaded:
             return {
@@ -271,31 +360,38 @@ class Phi3Model(BaseLLMModel):
                 'latency_seconds': 0,
                 'finish_reason': None,
                 'success': False,
-                'error': 'Phi-3 model not loaded. Implement model loading first.'
+                'error': 'Phi-3 model not loaded. Run download_models.py first.'
             }
         
         try:
-            # Format prompt for Phi-3
-            formatted_prompt = f"<|system|>\n{system_prompt}\n<|end|>\n<|user|>\n{prompt}\n<|end|>\n<|assistant|>" if system_prompt else f"<|user|>\n{prompt}\n<|end|>\n<|assistant|>"
+            # Format prompt for Phi-3 chat template
+            formatted_prompt = f"<|system|>\n{system_prompt}<|end|>\n<|user|>\n{prompt}<|end|>\n<|assistant|>" if system_prompt else f"<|user|>\n{prompt}<|end|>\n<|assistant|>"
             
             start_time = time.time()
             
-            # Placeholder for actual inference
-            # inputs = self.tokenizer(formatted_prompt, return_tensors="pt")
-            # outputs = self.model.generate(**inputs, max_new_tokens=self.max_tokens)
-            # response_text = self.tokenizer.decode(outputs[0])
+            # Generate response
+            output = self.model(
+                formatted_prompt,
+                max_tokens=self.max_tokens,
+                temperature=self.temperature,
+                stop=["<|end|>", "</s>"],
+                echo=False
+            )
             
-            response_text = "[Simulated Phi-3 response - implement actual inference]"
             end_time = time.time()
             
+            response_text = output['choices'][0]['text']
+            tokens_used = output['usage']['total_tokens']
+            
             self.total_requests += 1
+            self.total_tokens_used += tokens_used
             
             return {
                 'response': response_text,
                 'model': self.model_name,
-                'tokens_used': 0,  # Calculate actual tokens
+                'tokens_used': tokens_used,
                 'latency_seconds': end_time - start_time,
-                'finish_reason': 'stop',
+                'finish_reason': output['choices'][0].get('finish_reason', 'stop'),
                 'success': True,
                 'error': None
             }
